@@ -14,10 +14,11 @@ public class PlayerController : MonoBehaviour
     private Vector2 _lookInput;
 
     private InputAction _aimAction;
+    private InputAction _dashAction;
 
     [SerializeField] private float _movementSpeed = 5;
     [SerializeField] private float _jumpHeight = 2;
-
+    [SerializeField] private float _dashHeight = 2;
     [SerializeField] private float _smoothTime = 0.2f;
 
     private float _turnSmoothVelcity;   
@@ -46,7 +47,8 @@ public class PlayerController : MonoBehaviour
         _lookAction = InputSystem.actions["Look"];
 
         _maincamera = Camera.main.transform;
-        _aimAction = InputSystem.actions ["Aim"];
+        _aimAction = InputSystem.actions["Aim"];
+        _dashAction = InputSystem.actions["Dash"];
     }
     void Start()
     {
@@ -59,11 +61,11 @@ public class PlayerController : MonoBehaviour
         _moveInput = _moveAction.ReadValue<Vector2>();
         _lookInput = _lookAction.ReadValue<Vector2>();
 
-       // MovimientoCutre();
-       //Movimiento2();
-        
+        // MovimientoCutre();
+        //Movimiento2();
 
-        if (_aimAction.WasPerformedThisFrame())
+
+        if (_aimAction.IsInProgress())
         {
             AimMovement();
         }
@@ -77,6 +79,12 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
         Gravity();
+
+        if (_dashAction.WasPressedThisFrame())
+        {
+            Dash();
+        }
+        
     }
 
     void Movement()
@@ -141,6 +149,15 @@ public class PlayerController : MonoBehaviour
         _playerGravity.y = Mathf.Sqrt(_jumpHeight * -2 * _gravity);
 
         _controller.Move(_playerGravity * Time.deltaTime);
+    }
+
+    void Dash()
+    {
+        _playerGravity.z = Mathf.Sqrt(_dashHeight * -2 * _gravity);
+
+        _controller.Move(_playerGravity * Time.deltaTime);
+
+        _playerGravity.z = 5;
     }
     
     void Gravity()
