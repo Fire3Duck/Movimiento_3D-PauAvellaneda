@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private InputAction _lookAction;
     private Vector2 _lookInput;
 
+    private InputAction _aimAction;
+
     [SerializeField] private float _movementSpeed = 5;
     [SerializeField] private float _jumpHeight = 2;
 
@@ -38,12 +40,13 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        _controller = GetComponent <CharacterController>();
+        _controller = GetComponent<CharacterController>();
         _moveAction = InputSystem.actions["Move"];
         _jumpAction = InputSystem.actions["Jump"];
         _lookAction = InputSystem.actions["Look"];
 
         _maincamera = Camera.main.transform;
+        _aimAction = InputSystem.actions ["Aim"];
     }
     void Start()
     {
@@ -58,9 +61,18 @@ public class PlayerController : MonoBehaviour
 
        // MovimientoCutre();
        //Movimiento2();
-       Movement();
+        
 
-        if(_jumpAction.WasPressedThisFrame() && IsGrounded())
+        if (_aimAction.WasPerformedThisFrame())
+        {
+            AimMovement();
+        }
+        else
+        {
+            Movement();
+        }
+
+        if (_jumpAction.WasPressedThisFrame() && IsGrounded())
         {
             Jump();
         }
@@ -102,20 +114,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void MovimientoCutre()
+    void AimMovement()
     {
-        
 
         Vector3 direction = new Vector3(_moveInput.x, 0, _moveInput.y);
 
-        if(direction != Vector3.zero)
-        {
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg; // para que el personaje gire la cabeza
-            float smoothAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothVelcity, _smoothTime);
-            transform.rotation = Quaternion.Euler(0, smoothAngle, 0);
+        float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg; // para que el personaje gire la cabeza
+        float smoothAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, _maincamera.eulerAngles.y, ref _turnSmoothVelcity, _smoothTime);
 
-            _controller.Move(direction.normalized * _movementSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.Euler(0, smoothAngle, 0);
+        if (direction != Vector3.zero)
+        {
+            Vector3 moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
+
+            _controller.Move(moveDirection.normalized * _movementSpeed * Time.deltaTime);
         }
+        
+        
     }
 
         

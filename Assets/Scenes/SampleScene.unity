@@ -347,7 +347,6 @@ GameObject:
   - component: {fileID: 208130370}
   - component: {fileID: 208130369}
   - component: {fileID: 208130368}
-  - component: {fileID: 208130372}
   m_Layer: 3
   m_Name: Cube (16)
   m_TagString: Untagged
@@ -444,28 +443,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 23.139, y: 0, z: 0}
---- !u!114 &208130372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208130367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7276b8be671936e4da2464f709e7d0b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movementSpeed: 5
-  _jumpHeight: 2
-  _smoothTime: 0.2
-  _gravity: -9.81
-  _playerGravity: {x: 0, y: 0, z: 0}
-  _sensor: {fileID: 0}
-  _groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  _sensorRadius: 0
 --- !u!1 &213984880
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,7 +1161,7 @@ MonoBehaviour:
   _smoothTime: 0.2
   _gravity: -9.81
   _playerGravity: {x: 0, y: 0, z: 0}
-  _sensor: {fileID: 1580122634}
+  _sensor: {fileID: 573159320}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 8
