@@ -1,18 +1,18 @@
 {
   "context": {
-    "projectPath": "G:/Movimiento-3D-PauAvellaneda/Packages",
+    "projectPath": "C:/Users/Alumne/Documents/GitHub/Movimiento_3D-PauAvellaneda/Packages",
     "unityVersion": "6000.0.53f1"
   },
   "inputs": [
-    "G:\\Movimiento-3D-PauAvellaneda\\Packages\\manifest.json",
-    "G:\\Movimiento-3D-PauAvellaneda\\Packages\\packages-lock.json",
+    "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Packages\\manifest.json",
+    "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Packages\\packages-lock.json",
     "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.53f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
     "com.unity.2d.sprite@1.0.0": {
       "name": "com.unity.2d.sprite",
       "displayName": "2D Sprite",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.2d.sprite@a1146c20a947",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.2d.sprite@a1146c20a947",
       "fingerprint": "a1146c20a94767d627b9db262ae136cedef9c2c7",
       "editorCompatibility": "2019.2.0a1",
       "version": "1.0.0",
@@ -22,7 +22,7 @@
     "com.unity.2d.tilemap@1.0.0": {
       "name": "com.unity.2d.tilemap",
       "displayName": "2D Tilemap Editor",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.2d.tilemap@3f6ff602680c",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.2d.tilemap@3f6ff602680c",
       "fingerprint": "3f6ff602680c7be3e17746d20ed91961ccec8b8f",
       "editorCompatibility": "2019.2.0a1",
       "version": "1.0.0",
@@ -32,7 +32,7 @@
     "com.unity.ads@4.4.2": {
       "name": "com.unity.ads",
       "displayName": "Advertisement Legacy",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ads@a7b997f68a1d",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ads@a7b997f68a1d",
       "fingerprint": "a7b997f68a1d40387ca4d33fc75578709c140a37",
       "editorCompatibility": "2018.4.18f1",
       "version": "4.4.2",
@@ -42,7 +42,7 @@
     "com.unity.ai.navigation@2.0.8": {
       "name": "com.unity.ai.navigation",
       "displayName": "AI Navigation",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ai.navigation@eb5635ad590d",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ai.navigation@eb5635ad590d",
       "fingerprint": "eb5635ad590d47cef2a5c920d9475cc222db3f67",
       "editorCompatibility": "6000.0.0a1",
       "version": "2.0.8",
@@ -52,7 +52,7 @@
     "com.unity.analytics@3.8.1": {
       "name": "com.unity.analytics",
       "displayName": "Analytics Library",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.analytics@6cc66d58ac08",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.analytics@6cc66d58ac08",
       "fingerprint": "6cc66d58ac08950316d3b86a26c92187aca1ddb0",
       "editorCompatibility": "2019.3.0a1",
       "version": "3.8.1",
@@ -62,7 +62,7 @@
     "com.unity.cinemachine@3.1.4": {
       "name": "com.unity.cinemachine",
       "displayName": "Cinemachine",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.cinemachine@b66fdb7cd1f2",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.cinemachine@b66fdb7cd1f2",
       "fingerprint": "b66fdb7cd1f2f796860f420c11c2033b2262c986",
       "editorCompatibility": "2022.3.0a1",
       "version": "3.1.4",
@@ -72,7 +72,7 @@
     "com.unity.collab-proxy@2.8.2": {
       "name": "com.unity.collab-proxy",
       "displayName": "Version Control",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.collab-proxy@c854d1f7d97f",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.collab-proxy@c854d1f7d97f",
       "fingerprint": "c854d1f7d97fbe1905f3e3591ded6fe77d96e654",
       "editorCompatibility": "2021.3.0f1",
       "version": "2.8.2",
@@ -82,7 +82,7 @@
     "com.unity.feature.development@1.0.2": {
       "name": "com.unity.feature.development",
       "displayName": "Engineering",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.feature.development@767aadbc6eb7",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.feature.development@767aadbc6eb7",
       "fingerprint": "767aadbc6eb72681a4ca807c8fa248e0230a0cef",
       "version": "1.0.2",
       "source": "builtin",
@@ -91,7 +91,7 @@
     "com.unity.ide.rider@3.0.36": {
       "name": "com.unity.ide.rider",
       "displayName": "JetBrains Rider Editor",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ide.rider@4d374c7eb6db",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ide.rider@4d374c7eb6db",
       "fingerprint": "4d374c7eb6db6907c7e6925e3086c3c73f926e13",
       "editorCompatibility": "2019.4.6f1",
       "version": "3.0.36",
@@ -101,7 +101,7 @@
     "com.unity.ide.visualstudio@2.0.23": {
       "name": "com.unity.ide.visualstudio",
       "displayName": "Visual Studio Editor",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ide.visualstudio@198cdf337d13",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ide.visualstudio@198cdf337d13",
       "fingerprint": "198cdf337d13c83ca953581515630d66b779e92b",
       "editorCompatibility": "2019.4.25f1",
       "version": "2.0.23",
@@ -111,7 +111,7 @@
     "com.unity.inputsystem@1.14.0": {
       "name": "com.unity.inputsystem",
       "displayName": "Input System",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.inputsystem@7fe8299111a7",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.inputsystem@7fe8299111a7",
       "fingerprint": "7fe8299111a78212d8968229ab41a82e4991ba25",
       "editorCompatibility": "2021.3.0a1",
       "version": "1.14.0",
@@ -121,7 +121,7 @@
     "com.unity.multiplayer.center@1.0.0": {
       "name": "com.unity.multiplayer.center",
       "displayName": "Multiplayer Center",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.multiplayer.center@f3fb577b3546",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.multiplayer.center@f3fb577b3546",
       "fingerprint": "f3fb577b3546594b97b8cc34307cd621f60f1c73",
       "editorCompatibility": "6000.0.0a1",
       "version": "1.0.0",
@@ -131,7 +131,7 @@
     "com.unity.purchasing@4.12.2": {
       "name": "com.unity.purchasing",
       "displayName": "In App Purchasing",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.purchasing@649c6c7b3b1b",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.purchasing@649c6c7b3b1b",
       "fingerprint": "649c6c7b3b1b6277839041f4987c0a1e66176678",
       "editorCompatibility": "2020.3.0a1",
       "version": "4.12.2",
@@ -141,7 +141,7 @@
     "com.unity.test-framework@1.5.1": {
       "name": "com.unity.test-framework",
       "displayName": "Test Framework",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.test-framework@dfdbd02f5918",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.test-framework@dfdbd02f5918",
       "fingerprint": "dfdbd02f59180baa5668370b8f71f6fbeaa3b032",
       "editorCompatibility": "2022.3.0a1",
       "version": "1.5.1",
@@ -151,7 +151,7 @@
     "com.unity.timeline@1.8.7": {
       "name": "com.unity.timeline",
       "displayName": "Timeline",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.timeline@c58b4ee65782",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.timeline@c58b4ee65782",
       "fingerprint": "c58b4ee65782ad38338e29f7ee67787cb6998f04",
       "editorCompatibility": "2019.3.0a1",
       "version": "1.8.7",
@@ -161,7 +161,7 @@
     "com.unity.ugui@2.0.0": {
       "name": "com.unity.ugui",
       "displayName": "Unity UI",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ugui@a73638a9fb22",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ugui@a73638a9fb22",
       "fingerprint": "a73638a9fb228eb798fdabde921d8a5e64ed7387",
       "editorCompatibility": "2019.2.0a1",
       "version": "2.0.0",
@@ -171,7 +171,7 @@
     "com.unity.visualscripting@1.9.7": {
       "name": "com.unity.visualscripting",
       "displayName": "Visual Scripting",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.visualscripting@6279e2b7c485",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.visualscripting@6279e2b7c485",
       "fingerprint": "6279e2b7c4858e56cca7f367cd38c49ef66778c9",
       "editorCompatibility": "2021.3.0a1",
       "version": "1.9.7",
@@ -181,7 +181,7 @@
     "com.unity.xr.legacyinputhelpers@2.1.12": {
       "name": "com.unity.xr.legacyinputhelpers",
       "displayName": "XR Legacy Input Helpers",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.xr.legacyinputhelpers@b7579e86f3b4",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.xr.legacyinputhelpers@b7579e86f3b4",
       "fingerprint": "b7579e86f3b456c909fda6b875fba7ab1eeb1322",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.1.12",
@@ -463,7 +463,7 @@
     "com.unity.ext.nunit@2.0.5": {
       "name": "com.unity.ext.nunit",
       "displayName": "Custom NUnit",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ext.nunit@031a54704bff",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.ext.nunit@031a54704bff",
       "fingerprint": "031a54704bffe39e6a0324909f8eaa4565bdebf2",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.0.5",
@@ -473,7 +473,7 @@
     "com.unity.services.core@1.14.0": {
       "name": "com.unity.services.core",
       "displayName": "Services Core",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.services.core@9e81a5e38245",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.services.core@9e81a5e38245",
       "fingerprint": "9e81a5e382457b799480b311ce51187be99abbbf",
       "editorCompatibility": "2021.3.0a1",
       "version": "1.14.0",
@@ -483,7 +483,7 @@
     "com.unity.editorcoroutines@1.0.0": {
       "name": "com.unity.editorcoroutines",
       "displayName": "Editor Coroutines",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.editorcoroutines@7d48783e7b8c",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.editorcoroutines@7d48783e7b8c",
       "fingerprint": "7d48783e7b8cfcee5f8ef9ba787ed0d9dad4ebca",
       "editorCompatibility": "2018.1.0a1",
       "version": "1.0.0",
@@ -493,7 +493,7 @@
     "com.unity.performance.profile-analyzer@1.2.3": {
       "name": "com.unity.performance.profile-analyzer",
       "displayName": "Profile Analyzer",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.performance.profile-analyzer@a68e7bc84997",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.performance.profile-analyzer@a68e7bc84997",
       "fingerprint": "a68e7bc849973d943853204178d08a2bc7656ffe",
       "editorCompatibility": "2020.3.0a1",
       "version": "1.2.3",
@@ -503,7 +503,7 @@
     "com.unity.testtools.codecoverage@1.2.6": {
       "name": "com.unity.testtools.codecoverage",
       "displayName": "Code Coverage",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.testtools.codecoverage@205a02cbcb39",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.testtools.codecoverage@205a02cbcb39",
       "fingerprint": "205a02cbcb39584f20b51c49b853047aceb3a3a7",
       "editorCompatibility": "2019.3.0a1",
       "version": "1.2.6",
@@ -513,7 +513,7 @@
     "com.unity.splines@2.8.1": {
       "name": "com.unity.splines",
       "displayName": "Splines",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.splines@b909627b5095",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.splines@b909627b5095",
       "fingerprint": "b909627b5095061d48761597bbb8384d6f04e510",
       "editorCompatibility": "2022.3.0a1",
       "version": "2.8.1",
@@ -523,7 +523,7 @@
     "com.unity.services.analytics@6.0.3": {
       "name": "com.unity.services.analytics",
       "displayName": "Analytics",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.services.analytics@3692623288ba",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.services.analytics@3692623288ba",
       "fingerprint": "3692623288ba229ed0f5eb57c112f2723e2f03cf",
       "editorCompatibility": "2021.3.0a1",
       "version": "6.0.3",
@@ -533,7 +533,7 @@
     "com.unity.nuget.newtonsoft-json@3.2.1": {
       "name": "com.unity.nuget.newtonsoft-json",
       "displayName": "Newtonsoft Json",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@74deb55db2a0",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@74deb55db2a0",
       "fingerprint": "74deb55db2a0c29ddfda576608bcb86abbd13ee6",
       "editorCompatibility": "2018.4.0a1",
       "version": "3.2.1",
@@ -543,7 +543,7 @@
     "com.unity.settings-manager@2.1.0": {
       "name": "com.unity.settings-manager",
       "displayName": "Settings Manager",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.settings-manager@41738c275190",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.settings-manager@41738c275190",
       "fingerprint": "41738c27519039c335849eb78949382f4d7a3544",
       "editorCompatibility": "2022.3.0a1",
       "version": "2.1.0",
@@ -553,7 +553,7 @@
     "com.unity.mathematics@1.3.2": {
       "name": "com.unity.mathematics",
       "displayName": "Mathematics",
-      "resolvedPath": "G:\\Movimiento-3D-PauAvellaneda\\Library\\PackageCache\\com.unity.mathematics@8017b507cc74",
+      "resolvedPath": "C:\\Users\\Alumne\\Documents\\GitHub\\Movimiento_3D-PauAvellaneda\\Library\\PackageCache\\com.unity.mathematics@8017b507cc74",
       "fingerprint": "8017b507cc74bf0a1dd14b18aa860569f807314d",
       "editorCompatibility": "2021.3.0a1",
       "version": "1.3.2",
