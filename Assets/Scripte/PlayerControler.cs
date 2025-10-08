@@ -149,10 +149,10 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void OnDrawGizmos()
+    /*void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(_sensor.position, _sensorRadius);
-    }
+    }*/
     
 }
