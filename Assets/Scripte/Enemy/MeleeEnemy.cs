@@ -1,22 +1,23 @@
 using UnityEngine;
 
-public class MeleeEnemy : Enemy
+public class MeleeEnemy : Enemy, IDamageable
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    float maxHealth = 10;
+    float currenthealth = 10;
+
     void Start()
     {
         Attack();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public override void Attack() //sobreescribir la funcion original.
     {
         base.Attack(); //Llama a la funcion original.
         Debug.Log("Ataque Cuerpo a Cuerpo");
+    }
+
+    void IDamageable.TakeDamage()
+    {
+        Debug.Log("Enemigo recibiendo daño");
     }
 }

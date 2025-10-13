@@ -100,11 +100,11 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log(hit.transform.name);
 
-            Enemy enemyScript = hit.transform.GetComponent<Enemy>();
+            IDamageable damageable = hit.transform.GetComponent<IDamageable>();
 
-            if(enemyScript != null)
+            if(damageable != null)
             {
-                enemyScript.TakeDamage();
+                damageable.TakeDamage();
             }
         }
     }
