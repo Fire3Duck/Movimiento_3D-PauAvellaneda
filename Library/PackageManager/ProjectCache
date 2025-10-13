@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638955086540482520
-    m_Hash: 1601650947
+      ticks: 638959337052353988
+    m_Hash: 1303305038
   m_LockFileStatus:
     m_FilePath: C:/Users/Alumne/Documents/GitHub/Movimiento_3D-PauAvellaneda/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638955086540492518
-    m_Hash: 2898235613
+      ticks: 638959337052353988
+    m_Hash: 1386240972
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -936,11 +936,13 @@ m_ResolvedPackages:
     - 2.9.1
     - 2.9.2
     - 2.9.3
+    - 2.10.0
     compatible:
     - 2.8.2
     - 2.9.1
     - 2.9.2
     - 2.9.3
+    - 2.10.0
     recommended: 2.8.2
     deprecated: []
   dependencies: []
@@ -6118,9 +6120,11 @@ m_ResolvedPackages:
     - 2.0.0
     - 2.0.1
     - 2.1.0
+    - 2.1.1
     compatible:
     - 2.1.0
-    recommended: 2.1.0
+    - 2.1.1
+    recommended: 2.1.1
     deprecated: []
   dependencies: []
   resolvedDependencies: []
