@@ -3,9 +3,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    //Components
     private CharacterController _controller;
     private Animator _animator;
 
+    //Inputs
     private InputAction _moveAction;
 
     private Vector2 _moveInput;

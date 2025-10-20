@@ -1262,7 +1262,7 @@ GameObject:
   - component: {fileID: 576263476}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1634,7 +1634,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.013746128, y: 5.4381905e-10, z: 7.476113e-12, w: 0.9999055}
+  m_LocalRotation: {x: -0.19016469, y: 0.0000000015316278, z: 2.9667518e-10, w: 0.9817522}
   m_LocalPosition: {x: -2.57, y: 4.64, z: 0.9899998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2551,6 +2551,7 @@ GameObject:
   - component: {fileID: 1634894261}
   - component: {fileID: 1634894260}
   - component: {fileID: 1634894259}
+  - component: {fileID: 1634894265}
   m_Layer: 0
   m_Name: FreeLook Camera
   m_TagString: Untagged
@@ -2649,7 +2650,7 @@ MonoBehaviour:
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0.5, z: 0}
+  TargetOffset: {x: 0, y: 2, z: 0}
   Damping: {x: 0.5, y: 0.5}
   Lookahead:
     Enabled: 0
@@ -2770,13 +2771,52 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634894258}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0137461275, y: 5.43819e-10, z: 7.476108e-12, w: 0.9999056}
+  m_LocalRotation: {x: -0.19016467, y: 0.0000000015316278, z: 2.9667516e-10, w: 0.9817522}
   m_LocalPosition: {x: -2.57, y: 4.64, z: 0.9899998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1634894265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634894258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe43d662878a7c43bcd44d43c9e2094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollideAgainst:
+    serializedVersion: 2
+    m_Bits: 9
+  IgnoreTag: Player
+  TransparentLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  MinimumDistanceFromTarget: 0.3
+  AvoidObstacles:
+    Enabled: 1
+    DistanceLimit: 0
+    MinimumOcclusionTime: 0
+    CameraRadius: 0.7
+    UseFollowTarget:
+      Enabled: 0
+      YOffset: 0
+    Strategy: 0
+    MaximumEffort: 4
+    SmoothingTime: 0
+    Damping: 0.4
+    DampingWhenOccluded: 0.2
+  ShotQualityEvaluation:
+    Enabled: 0
+    OptimalDistance: 10
+    NearLimit: 5
+    FarLimit: 30
+    MaxQualityBoost: 0.2
 --- !u!1 &1894139369
 GameObject:
   m_ObjectHideFlags: 0
