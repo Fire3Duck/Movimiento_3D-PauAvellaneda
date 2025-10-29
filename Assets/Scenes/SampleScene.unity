@@ -1282,6 +1282,7 @@ MonoBehaviour:
   _movementSpeed: 5
   _jumpHeight: 2
   _pushForce: 10
+  _throwForce: 100
   _dashHeight: 2
   _smoothTime: 0.2
   _gravity: -9.81

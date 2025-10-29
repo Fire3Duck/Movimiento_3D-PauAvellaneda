@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,11 +19,13 @@ public class PlayerController : MonoBehaviour
 
     private InputAction _aimAction;
     private InputAction _grabAction;
+    private InputAction _throwAction;
     private InputAction _dashAction;
 
     [SerializeField] private float _movementSpeed = 5;
     [SerializeField] private float _jumpHeight = 2;
     [SerializeField] private float _pushForce = 10;
+    [SerializeField] private float _throwForce = 10;
     [SerializeField] private float _dashHeight = 2;
     [SerializeField] private float _smoothTime = 0.2f;
 
@@ -49,6 +52,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform _hands;
     [SerializeField] private Transform _grabedObject;
 
+
     void Awake()
     {
         _controller = GetComponent<CharacterController>();
@@ -62,6 +66,7 @@ public class PlayerController : MonoBehaviour
         _aimAction = InputSystem.actions["Aim"];
         _dashAction = InputSystem.actions["Dash"];
         _grabAction = InputSystem.actions["Interact"];
+        _throwAction = InputSystem.actions["Throw"];
     }
     void Start()
     {
@@ -102,10 +107,15 @@ public class PlayerController : MonoBehaviour
         {
             Attack();
         }
-        
+
         if (_grabAction.WasPerformedThisFrame())
         {
             GrabObject();
+        }
+        
+        if (_throwAction.WasPerformedThisFrame())
+        {
+            Throw();
         }
 
     }
@@ -288,6 +298,21 @@ public class PlayerController : MonoBehaviour
             _grabedObject.GetComponent<Rigidbody>().isKinematic = false;
             _grabedObject = null;
         }
+
+    }
+    
+    void Throw()
+    {
+        if (_grabedObject == null)
+        {
+            return;
+        }
         
+        Rigidbody grabedBody = _grabedObject.GetComponent<Rigidbody>();
+
+        _grabedObject.SetParent(null);
+        grabedBody.isKinematic = false;
+        grabedBody.AddForce(_maincamera.transform.forward * _throwForce, ForceMode.Impulse);
+        _grabedObject = null;
     }
 }
