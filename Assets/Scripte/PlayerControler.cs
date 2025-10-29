@@ -17,10 +17,12 @@ public class PlayerController : MonoBehaviour
     private Vector2 _lookInput;
 
     private InputAction _aimAction;
+    private InputAction _grabAction;
     private InputAction _dashAction;
 
     [SerializeField] private float _movementSpeed = 5;
     [SerializeField] private float _jumpHeight = 2;
+    [SerializeField] private float _pushForce = 10;
     [SerializeField] private float _dashHeight = 2;
     [SerializeField] private float _smoothTime = 0.2f;
 
@@ -40,7 +42,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float _sensorRadius;
 
-    private Transform _maincamera;
+    public Transform _maincamera;
+
+    [SerializeField] private Vector3 _handsSensorSize;
+
+    [SerializeField] private Transform _hands;
+    [SerializeField] private Transform _grabedObject;
 
     void Awake()
     {
@@ -54,6 +61,7 @@ public class PlayerController : MonoBehaviour
         _maincamera = Camera.main.transform;
         _aimAction = InputSystem.actions["Aim"];
         _dashAction = InputSystem.actions["Dash"];
+        _grabAction = InputSystem.actions["Interact"];
     }
     void Start()
     {
@@ -90,9 +98,14 @@ public class PlayerController : MonoBehaviour
             Dash();
         }
 
-        if(_aimAction.WasPerformedThisFrame())
+        if (_aimAction.WasPerformedThisFrame())
         {
             Attack();
+        }
+        
+        if (_grabAction.WasPerformedThisFrame())
+        {
+            GrabObject();
         }
 
     }
@@ -223,6 +236,58 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(_sensor.position, _sensorRadius);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(_hands.position, _handsSensorSize);
     }
-    
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.transform.gameObject.tag == "Empujable")
+        {
+            //Rigidbody rBody = hit.collider.attachedRigidbody;
+            Rigidbody rBody = hit.transform.GetComponent<Rigidbody>();
+
+            if (rBody == null || rBody.isKinematic) //El Kinematic hace que no le afecte la gravedad a objetos.
+            {
+                return;
+            }
+
+            Vector3 pushDirection = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+
+            rBody.linearVelocity = pushDirection * _pushForce / rBody.mass;
+        }
+    }
+
+    void GrabObject()
+    {
+        if (_grabedObject == null)
+        {
+            Collider[] objectsToGrab = Physics.OverlapBox(_hands.position, _handsSensorSize);
+
+            foreach (Collider item in objectsToGrab)
+            {
+                IGrabeable grabeableObject = item.GetComponent<IGrabeable>();
+
+                if (grabeableObject != null)
+                {
+                    _grabedObject = item.transform;
+                    _grabedObject.SetParent(_hands);
+                    _grabedObject.position = _hands.position;
+                    _grabedObject.rotation = _hands.rotation;
+                    _grabedObject.GetComponent<Rigidbody>().isKinematic = true;
+
+                    return;
+                }
+            }
+        }
+
+        else
+        {
+            _grabedObject.SetParent(null);
+            _grabedObject.GetComponent<Rigidbody>().isKinematic = false;
+            _grabedObject = null;
+        }
+        
+    }
 }
