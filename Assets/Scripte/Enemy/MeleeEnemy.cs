@@ -16,7 +16,7 @@ public class MeleeEnemy : Enemy, IDamageable
         Debug.Log("Ataque Cuerpo a Cuerpo");
     }
 
-    void IDamageable.TakeDamage()
+    void IDamageable.TakeDamage(float damage)
     {
         Debug.Log("Enemigo recibiendo daño");
     }

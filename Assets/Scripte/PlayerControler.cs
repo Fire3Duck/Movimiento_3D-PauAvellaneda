@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -112,11 +111,14 @@ public class PlayerController : MonoBehaviour
         {
             GrabObject();
         }
-        
+
         if (_throwAction.WasPerformedThisFrame())
         {
-            Throw();
+            //Throw();
+            RayTest();
         }
+
+        
 
     }
     
@@ -132,7 +134,7 @@ public class PlayerController : MonoBehaviour
 
             if(damageable != null)
             {
-                damageable.TakeDamage();
+                damageable.TakeDamage(6);
             }
         }
     }
@@ -159,17 +161,6 @@ public class PlayerController : MonoBehaviour
     void Movimiento2()
     {
         Vector3 direction = new Vector3(_moveInput.x, 0, _moveInput.y);
-
-        
-
-        Ray ray = Camera.main.ScreenPointToRay(_lookInput);
-        RaycastHit hit;
-        if(Physics.Raycast(ray, out hit, Mathf.Infinity))
-        {
-            Vector3 playerforward = hit.point - transform.position;
-            playerforward.y = 0;
-            transform.forward = playerforward;
-        }
 
         if(direction != Vector3.zero)
         {
@@ -219,14 +210,14 @@ public class PlayerController : MonoBehaviour
 
         _playerGravity.z = 5;
     }
-    
+
     void Gravity()
     {
-        if(!IsGrounded())
+        if (!IsGrounded())
         {
             _playerGravity.y += _gravity * Time.deltaTime;
         }
-        else if(IsGrounded() && _playerGravity.y < 0)
+        else if (IsGrounded() && _playerGravity.y < 0)
         {
             _playerGravity.y = _gravity;
             _animator.SetBool("IsJumping", false);
@@ -236,9 +227,24 @@ public class PlayerController : MonoBehaviour
     }
     
 
-    bool IsGrounded()
+    /*bool IsGrounded()
     {
         return Physics.CheckSphere(_sensor.position, _sensorRadius, _groundLayer);
+    }*/
+    
+    bool IsGrounded()
+    {
+        if (Physics.Raycast(_sensor.position, -transform.up, _sensorRadius, _groundLayer))
+        {
+            Debug.DrawRay(_sensor.position, -transform.up * _sensorRadius, Color.red);
+            return true;
+        }
+
+        else
+        {
+            Debug.DrawRay(_sensor.position, -transform.up * _sensorRadius, Color.green);
+            return false;
+        }
     }
 
 
@@ -300,19 +306,72 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    
+
     void Throw()
     {
         if (_grabedObject == null)
         {
             return;
         }
-        
+
         Rigidbody grabedBody = _grabedObject.GetComponent<Rigidbody>();
 
         _grabedObject.SetParent(null);
         grabedBody.isKinematic = false;
         grabedBody.AddForce(_maincamera.transform.forward * _throwForce, ForceMode.Impulse);
         _grabedObject = null;
+    }
+    
+    void RayTest()
+    {
+        //Raycast simple
+
+        if (Physics.Raycast(transform.position, transform.forward, 6))
+        {
+            Debug.Log("Hit");
+            Debug.DrawRay(transform.position, transform.forward * 6, Color.red);
+        }
+
+        else
+        {
+            Debug.DrawRay(transform.position, transform.forward * 6, Color.green);
+        }
+
+
+        //RayCast "Avanzado"
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 6)) //El Out hit almacena lo que toca en el Hit de arriba.
+        {
+            Debug.Log(hit.transform.name);
+            Debug.Log(hit.transform.position);
+            Debug.Log(hit.transform.gameObject.layer);
+            Debug.Log(hit.transform.tag);
+
+            /*if (hit.transform.tag == "Empujable")
+            {
+                Box box = hit.transform.GetComponent<Box>();
+
+                if (box != null)
+                {
+                    Debug.Log("Cosas");
+                }
+            }*/
+
+            IDamageable damageable = hit.transform.GetComponent<IDamageable>();
+
+            if (damageable != null)
+            {
+                damageable.TakeDamage(6);
+            }
+        }
+
+        Ray ray = Camera.main.ScreenPointToRay(_lookInput); //ScreenPointToRay, importante aprenderselo.
+        RaycastHit hit2;
+        if(Physics.Raycast(ray, out hit2, Mathf.Infinity))
+        {
+            Vector3 playerforward = hit2.point - transform.position;
+            playerforward.y = 0;
+            transform.forward = playerforward;
+        }
     }
 }
