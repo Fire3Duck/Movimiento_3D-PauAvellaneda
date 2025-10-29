@@ -2423,3 +2423,43 @@ Memory consumption went from 95.9 MB to 94.9 MB.
 Total: 8.177100 ms (FindLiveObjects: 0.382500 ms CreateObjectMapping: 0.260200 ms MarkObjects: 6.608200 ms  DeleteObjects: 0.925100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 11190.269018 seconds.
+  path: Assets/LowCharacterPack
+  artifactKey: Guid(103b5c0ff06c8e14d9d7f88406b9185e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowCharacterPack using Guid(103b5c0ff06c8e14d9d7f88406b9185e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae77d76845db22d83f9d2b349a617dae') in 0.0702938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.837479 seconds.
+  path: Assets/LowCharacterPack/LowCharacter_demo
+  artifactKey: Guid(a249dbf05af62844fb4df3b30add78b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowCharacterPack/LowCharacter_demo using Guid(a249dbf05af62844fb4df3b30add78b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d522f68b9154be976232044ff321dc3') in 0.0011222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.715003 seconds.
+  path: Assets/Player.prefab
+  artifactKey: Guid(f893836216d205f44866df888a8e73b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player.prefab using Guid(f893836216d205f44866df888a8e73b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07d85d95099c1a82d3a27fa051d3e925') in 0.3460265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 209
+
+========================================================================
+Received Import Request.
+  Time since last request: 194.826253 seconds.
+  path: Assets/Scripte/PlayerControler.cs
+  artifactKey: Guid(7276b8be671936e4da2464f709e7d0b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripte/PlayerControler.cs using Guid(7276b8be671936e4da2464f709e7d0b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d76390cecb28c1faca53a5352778ac6') in 0.0012369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.371928 seconds.
+  path: Assets/Scripte/IGrabeable.cs
+  artifactKey: Guid(2aa7a265dabad954cab55959219de166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripte/IGrabeable.cs using Guid(2aa7a265dabad954cab55959219de166) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbfc9aafa7a632ea322fdc52358bc066') in 0.0006344 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
