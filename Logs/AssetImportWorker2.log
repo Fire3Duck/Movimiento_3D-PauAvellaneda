@@ -1286,3 +1286,11 @@ Memory consumption went from 95.9 MB to 95.0 MB.
 Total: 12.424700 ms (FindLiveObjects: 0.671700 ms CreateObjectMapping: 0.436300 ms MarkObjects: 9.961000 ms  DeleteObjects: 1.354000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1828.120168 seconds.
+  path: Assets/FinCinematica.signal
+  artifactKey: Guid(e39e078a869cc004d97731d416bfd102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FinCinematica.signal using Guid(e39e078a869cc004d97731d416bfd102) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0bdae71c2d4f2c1d0349633c4d9fca88') in 0.0342816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
