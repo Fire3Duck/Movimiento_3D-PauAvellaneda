@@ -1863,9 +1863,7 @@ PlayableDirector:
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 393240738141133685, guid: 373430bf7ceebdf4e8e75562e897e7ad, type: 2}
-    value: {fileID: 987826140}
+  m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
 --- !u!4 &910465410
@@ -2008,11 +2006,6 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
---- !u!95 &987826140 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7602982536377496409, guid: f893836216d205f44866df888a8e73b6, type: 3}
-  m_PrefabInstance: {fileID: 1757961063005863460}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1065839106
 GameObject:
   m_ObjectHideFlags: 0
