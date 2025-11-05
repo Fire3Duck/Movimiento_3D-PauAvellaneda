@@ -1203,3 +1203,11 @@ Memory consumption went from 95.9 MB to 94.9 MB.
 Total: 12.544500 ms (FindLiveObjects: 0.637500 ms CreateObjectMapping: 0.497000 ms MarkObjects: 10.061000 ms  DeleteObjects: 1.347400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 5238.946166 seconds.
+  path: Assets/Timeline.playable
+  artifactKey: Guid(373430bf7ceebdf4e8e75562e897e7ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Timeline.playable using Guid(373430bf7ceebdf4e8e75562e897e7ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19838988bd316ffcadecc18388a9fc37') in 0.0421762 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
