@@ -104101,8 +104101,13 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 4697157,
       "PayloadLength": 39874,
+=======
+      "PayloadOffset": 4696988,
+      "PayloadLength": 40141,
+>>>>>>> 2b725bf6c272624455105f26d5b4e29b23cacfd9
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "InputFlags": [],
@@ -104118,7 +104123,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 4737118,
+=======
+      "PayloadOffset": 4737216,
+>>>>>>> 2b725bf6c272624455105f26d5b4e29b23cacfd9
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -104440,13 +104449,29 @@
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.SpatialTracking.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll",
+        "Assets/Scripte/Box.cs",
+        "Assets/Scripte/Enemy/Caja.cs",
+        "Assets/Scripte/Enemy/Enemy.cs",
+        "Assets/Scripte/Enemy/IDamageable.cs",
+        "Assets/Scripte/Enemy/IInteractable.cs",
+        "Assets/Scripte/Enemy/MeleeEnemy.cs",
+        "Assets/Scripte/IGrabeable.cs",
         "Assets/Scripte/PlayerControler.cs",
+        "Assets/Scripte/TPSController.cs",
         "C:/Program Files/Unity/Hub/Editor/6000.0.53f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.0.53f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.0.53f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll",
         "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp"
       ],
       "InputFlags": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -105377,7 +105402,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 4737214,
+=======
+      "PayloadOffset": 4737312,
+>>>>>>> 2b725bf6c272624455105f26d5b4e29b23cacfd9
       "PayloadLength": 15489,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -109519,9 +109548,15 @@
       "Annotation": "WriteResponseFile Library/Bee/artifacts/rsp/6097564273297756792.rsp",
       "DisplayName": "Writing 6097564273297756792.rsp",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 4752792,
       "PayloadLength": 8336,
       "PayloadDebugContentSnippet": "-a=\"C:\\Users\\Usuario\\Documents",
+=======
+      "PayloadOffset": 4752890,
+      "PayloadLength": 8277,
+      "PayloadDebugContentSnippet": "-a=\"C:\\Users\\Alumne\\Documents\\",
+>>>>>>> 2b725bf6c272624455105f26d5b4e29b23cacfd9
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
