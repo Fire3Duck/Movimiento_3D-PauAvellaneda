@@ -104101,13 +104101,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
       "PayloadOffset": 4697157,
-      "PayloadLength": 39874,
-=======
-      "PayloadOffset": 4696988,
       "PayloadLength": 40141,
->>>>>>> 2b725bf6c272624455105f26d5b4e29b23cacfd9
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "InputFlags": [],
@@ -104123,11 +104118,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 4737118,
-=======
-      "PayloadOffset": 4737216,
->>>>>>> 2b725bf6c272624455105f26d5b4e29b23cacfd9
+      "PayloadOffset": 4737385,
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -105402,11 +105393,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 4737214,
-=======
-      "PayloadOffset": 4737312,
->>>>>>> 2b725bf6c272624455105f26d5b4e29b23cacfd9
+      "PayloadOffset": 4737481,
       "PayloadLength": 15489,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -109548,15 +109535,9 @@
       "Annotation": "WriteResponseFile Library/Bee/artifacts/rsp/6097564273297756792.rsp",
       "DisplayName": "Writing 6097564273297756792.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 4752792,
+      "PayloadOffset": 4753059,
       "PayloadLength": 8336,
       "PayloadDebugContentSnippet": "-a=\"C:\\Users\\Usuario\\Documents",
-=======
-      "PayloadOffset": 4752890,
-      "PayloadLength": 8277,
-      "PayloadDebugContentSnippet": "-a=\"C:\\Users\\Alumne\\Documents\\",
->>>>>>> 2b725bf6c272624455105f26d5b4e29b23cacfd9
       "Inputs": [],
       "InputFlags": [],
       "Outputs": [
