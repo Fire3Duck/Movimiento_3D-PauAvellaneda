@@ -139,23 +139,74 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+    [SerializeField] float _speedChangeRate = 10;
+    float _speed;
+
+    float _animationSpeed;
+
+    bool isSprinting = false;
+    float _sprintSpeed = 8;
+    float targetAngle;
+
+
+
     void Movement()
     {
         Vector3 direction = new Vector3(_moveInput.x, 0, _moveInput.y);
 
-        _animator.SetFloat("Vertical", direction.magnitude);
-        _animator.SetFloat("Horizontal", 0);
+        float targetSpeed = _movementSpeed;
+
+        if(isSprinting)
+        {
+            targetSpeed = _sprintSpeed;
+        }
+        else
+        {
+            targetSpeed = _movementSpeed;
+        }
+
+        if(direction == Vector3.zero)
+        {
+            targetSpeed = 0;
+        }
+
+        float currentSpeed = new Vector3(_controller.velocity.x, 0, _controller.velocity.z).magnitude;
+
+        if(currentSpeed < targetSpeed || currentSpeed > targetSpeed)
+        {
+            _speed = Mathf.Lerp(currentSpeed ,targetSpeed, Time.deltaTime * _speedChangeRate);
+        }
+        else
+        {
+            _speed = targetSpeed;
+        }
+
+        _animationSpeed = Mathf.Lerp(_animationSpeed, targetSpeed, Time.deltaTime * _speedChangeRate);
+
+        if(_animationSpeed < 0.1f)
+        {
+            _animationSpeed = 0;
+        }
+
+        _animator.SetFloat("Speed", _animationSpeed);
+
+        //_animator.SetFloat("Vertical", direction.magnitude);
+        //_animator.SetFloat("Horizontal", 0);
 
         if(direction != Vector3.zero)
         {
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + _maincamera.eulerAngles.y; // para que el personaje gire la cabeza
+            targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + _maincamera.eulerAngles.y; // para que el personaje gire la cabeza
             float smoothAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothVelcity, _smoothTime);
+
             transform.rotation = Quaternion.Euler(0, smoothAngle, 0);
 
-            Vector3 moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
-
-            _controller.Move(moveDirection.normalized * _movementSpeed * Time.deltaTime);
+            
         }
+
+        Vector3 moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
+
+        _controller.Move(_speed * Time.deltaTime * moveDirection.normalized + _playerGravity * Time.deltaTime);
     }
 
     void Movimiento2()
@@ -199,14 +250,14 @@ public class PlayerController : MonoBehaviour
 
         _playerGravity.y = Mathf.Sqrt(_jumpHeight * -2 * _gravity);
 
-        _controller.Move(_playerGravity * Time.deltaTime);
+        //_controller.Move(_playerGravity * Time.deltaTime);
     }
 
     void Dash()
     {
         _playerGravity.z = Mathf.Sqrt(_dashHeight * -2 * _gravity);
 
-        _controller.Move(_playerGravity * Time.deltaTime);
+        //_controller.Move(_playerGravity * Time.deltaTime);
 
         _playerGravity.z = 5;
     }
@@ -223,7 +274,7 @@ public class PlayerController : MonoBehaviour
             _animator.SetBool("IsJumping", false);
         }
 
-        _controller.Move(_playerGravity * Time.deltaTime);
+        //_controller.Move(_playerGravity * Time.deltaTime);
     }
     
 
