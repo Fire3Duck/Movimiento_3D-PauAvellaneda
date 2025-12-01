@@ -80,7 +80,8 @@ public class PlayerController : MonoBehaviour
 
         // MovimientoCutre();
         //Movimiento2();
-
+        
+        Gravity();
 
         if (_aimAction.IsInProgress())
         {
@@ -95,7 +96,7 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
-        Gravity();
+        
 
         if (_dashAction.WasPressedThisFrame())
         {
@@ -155,7 +156,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 direction = new Vector3(_moveInput.x, 0, _moveInput.y);
 
-        float targetSpeed = _movementSpeed;
+        float targetSpeed;
 
         if(isSprinting)
         {
@@ -173,9 +174,13 @@ public class PlayerController : MonoBehaviour
 
         float currentSpeed = new Vector3(_controller.velocity.x, 0, _controller.velocity.z).magnitude;
 
-        if(currentSpeed < targetSpeed || currentSpeed > targetSpeed)
+        float speedOfset = 0.1f;
+
+        if(currentSpeed < targetSpeed - speedOfset || currentSpeed > targetSpeed + speedOfset)
         {
             _speed = Mathf.Lerp(currentSpeed ,targetSpeed, Time.deltaTime * _speedChangeRate);
+
+            _speed = Mathf.Round(_speed * 1000f) / 1000f;
         }
         else
         {
@@ -246,7 +251,7 @@ public class PlayerController : MonoBehaviour
     
     void Jump()
     {
-        _animator.SetBool("IsJumping", true);
+        _animator.SetBool("Jump", true);
 
         _playerGravity.y = Mathf.Sqrt(_jumpHeight * -2 * _gravity);
 
@@ -264,17 +269,35 @@ public class PlayerController : MonoBehaviour
 
     void Gravity()
     {
-        if (!IsGrounded())
+        /*if (!IsGrounded())
         {
             _playerGravity.y += _gravity * Time.deltaTime;
         }
         else if (IsGrounded() && _playerGravity.y < 0)
         {
             _playerGravity.y = _gravity;
-            _animator.SetBool("IsJumping", false);
-        }
+            _animator.SetBool("Jump", false);
+        }*/
 
         //_controller.Move(_playerGravity * Time.deltaTime);
+
+        _animator.SetBool("Grounded", IsGrounded());
+
+        if(IsGrounded())
+        {
+            _animator.SetBool("Jump", false);
+            _animator.SetBool("Fall", false);
+
+            if(_playerGravity.y < 0)
+            {
+                _playerGravity.y = -2;
+            }
+        }
+        else
+        {
+            _animator.SetBool("Fall", true);
+            _playerGravity.y += _gravity * Time.deltaTime;
+        }
     }
     
 

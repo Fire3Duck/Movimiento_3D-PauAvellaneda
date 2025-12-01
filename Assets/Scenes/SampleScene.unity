@@ -1401,15 +1401,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4001,11 +4001,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4179844090391824554, guid: f893836216d205f44866df888a8e73b6, type: 3}
       propertyPath: m_Height
-      value: 2.82
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4179844090391824554, guid: f893836216d205f44866df888a8e73b6, type: 3}
       propertyPath: m_Radius
-      value: 0.41
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4179844090391824554, guid: f893836216d205f44866df888a8e73b6, type: 3}
       propertyPath: m_Center.x
@@ -4013,7 +4013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4179844090391824554, guid: f893836216d205f44866df888a8e73b6, type: 3}
       propertyPath: m_Center.y
-      value: 1.27
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4179844090391824554, guid: f893836216d205f44866df888a8e73b6, type: 3}
       propertyPath: m_SkinWidth
@@ -4024,8 +4024,12 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4370459887151378678, guid: f893836216d205f44866df888a8e73b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370459887151378678, guid: f893836216d205f44866df888a8e73b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.288
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4449130629424057771, guid: f893836216d205f44866df888a8e73b6, type: 3}
       propertyPath: _gravity
@@ -4035,6 +4039,10 @@ PrefabInstance:
       propertyPath: _maincamera
       value: 
       objectReference: {fileID: 1634894264}
+    - target: {fileID: 4449130629424057771, guid: f893836216d205f44866df888a8e73b6, type: 3}
+      propertyPath: _sensorRadius
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4449130629424057771, guid: f893836216d205f44866df888a8e73b6, type: 3}
       propertyPath: _movementSpeed
       value: 6
