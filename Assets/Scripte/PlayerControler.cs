@@ -178,7 +178,7 @@ public class PlayerController : MonoBehaviour
 
         if(currentSpeed < targetSpeed - speedOfset || currentSpeed > targetSpeed + speedOfset)
         {
-            _speed = Mathf.Lerp(currentSpeed ,targetSpeed, Time.deltaTime * _speedChangeRate);
+            _speed = Mathf.Lerp(currentSpeed, targetSpeed, Time.deltaTime * _speedChangeRate);
 
             _speed = Mathf.Round(_speed * 1000f) / 1000f;
         }
