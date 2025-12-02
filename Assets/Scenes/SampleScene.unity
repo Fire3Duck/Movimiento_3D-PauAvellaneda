@@ -4040,6 +4040,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1634894264}
     - target: {fileID: 4449130629424057771, guid: f893836216d205f44866df888a8e73b6, type: 3}
+      propertyPath: jumpTimeOut
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449130629424057771, guid: f893836216d205f44866df888a8e73b6, type: 3}
       propertyPath: _sensorRadius
       value: 0.2
       objectReference: {fileID: 0}
